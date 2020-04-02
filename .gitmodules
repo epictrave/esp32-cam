@@ -1,0 +1,6 @@
+[submodule "deps/esp32-camera"]
+	path = deps/esp32-camera
+	url = https://github.com/espressif/esp32-camera.git
+[submodule "deps/parson"]
+	path = deps/parson
+	url = https://github.com/kgabis/parson.git

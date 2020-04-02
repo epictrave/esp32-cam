@@ -1,0 +1,32 @@
+
+set(COMPONENT_SRCS
+  .
+  deps/esp32-camera/camera/camera.c
+  deps/esp32-camera/camera/sccb.c
+  deps/esp32-camera/camera/sensor.c
+  deps/esp32-camera/camera/twi.c
+  deps/esp32-camera/camera/xclk.c
+  deps/esp32-camera/sensors/ov2640.c
+  deps/esp32-camera/conversions/yuv.c
+  deps/esp32-camera/conversions/to_jpg.cpp
+  deps/esp32-camera/conversions/to_bmp.c
+  deps/esp32-camera/conversions/jpge.cpp
+  deps/esp32-camera/conversions/esp_jpg_decode.c
+  )
+
+set(COMPONENT_ADD_INCLUDEDIRS
+  .
+  deps/esp32-camera/camera/include
+  deps/esp32-camera/conversions/include
+  )
+
+set(COMPONENT_PRIV_INCLUDEDIRS
+  deps/esp32-camera/camera/private_include
+  deps/esp32-camera/sensors/private_include
+  deps/esp32-camera/conversions/private_include
+  )
+
+set(COMPONENT_REQUIRES deps/esp32-camera/driver)
+set(COMPONENT_PRIV_REQUIRES freertos)
+
+register_component()
