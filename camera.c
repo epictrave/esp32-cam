@@ -144,6 +144,7 @@ esp_err_t camera_take_picture(void) {
 
   if (!is_set_url) {
     ESP_LOGE(TAG, "url is not set.");
+    esp_camera_fb_return(fb);
     return ESP_FAIL;
   }
 
