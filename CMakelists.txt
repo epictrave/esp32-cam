@@ -1,6 +1,7 @@
 
 set(COMPONENT_SRCS
   .
+  deps
   deps/esp32-camera/camera/camera.c
   deps/esp32-camera/camera/sccb.c
   deps/esp32-camera/camera/sensor.c

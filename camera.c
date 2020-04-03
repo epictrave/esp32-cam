@@ -131,7 +131,6 @@ void camera_set_url(const char *url) {
 esp_err_t camera_take_picture(void) {
   ESP_LOGI(TAG, "Taking picture...");
   camera_fb_t *fb = NULL;
-  esp_err_t res = ESP_OK;
   int64_t fr_start = esp_timer_get_time();
   size_t fb_len = 0;
 

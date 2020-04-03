@@ -1,5 +1,6 @@
 
 COMPONENT_ADD_INCLUDEDIRS = . \
+deps/ \
 deps/esp32-camera/driver/include \
 deps/esp32-camera/conversions/include
 
